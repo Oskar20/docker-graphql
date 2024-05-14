@@ -27,11 +27,13 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t oscarp1220/docker-graphql:0.0.2 .
+        docker build -t oscarp1220/docker-graphql:0.0.3 .
+        docker build -t oscarp1220/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
-        docker push oscarp1220/docker-graphql:0.0.2
+        docker push oscarp1220/docker-graphql:0.0.3
+        docker push oscarp1220/docker-graphql:latest
         
 
 
